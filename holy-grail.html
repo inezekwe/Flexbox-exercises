@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flexbox Holy Grail Layout</title>
+        <style>
+            .container {
+                display: flex;
+                ;
+            }
+
+            .header, .footer, .content, .menu, .ads {
+               
+                border: 5px solid black;
+                height: 200px;
+                text-align: center;
+            }
+
+            .header {
+            
+                background-color: mediumturquoise;
+            }
+            
+            .footer {
+                
+                background-color: mediumturquoise;
+            }
+            .content {
+                background-color: pink;
+                flex-basis: content;
+                
+            }
+            
+            .ads {
+                flex-grow: 2;
+                background-color:mediumpurple;
+                font-size: 2em;
+            }
+            .menu {
+                order: -1;
+                flex-grow: 2;
+                background-color:mediumpurple;
+                font-size: 2em;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        
+        
+        <div class="header">
+            <h1>Header</h1></div>
+        
+        
+        
+    
+        <div class="container">
+            <div class="content">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmodquis nostrud exercitation ullamco 
+               </div>
+        <div class="menu">Menu</div>
+        <div class="ads">Ads</div>
+        </div>
+
+        
+            <div class="footer"><h1>Footer</h1></div>
+       
+        
+    </body>
+</html>
